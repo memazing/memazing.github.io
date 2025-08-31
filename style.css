@@ -59,12 +59,27 @@ nav {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        justify-content: flex-start;
+        padding-top: 10vh;
+    }
+    
     .logo {
         max-width: 500px;
+        margin-bottom: 1rem;
+    }
+    
+    header {
+        margin-bottom: 3rem;
     }
     
     .contact-link {
-        font-size: 1rem;
-        padding: 10px 20px;
+        font-size: 1.1rem;
+        padding: 16px 32px;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

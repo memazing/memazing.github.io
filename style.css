@@ -45,9 +45,16 @@ nav {
     background-color: #f0f0f0;
 }
 
-/* Dark mode support - swap to white logo */
+/* Dark mode support - background image approach */
 @media (prefers-color-scheme: dark) {
     .logo {
-        content: url('MemazingLogoSubtitleOutlineFlyHumanCapsWhite.png');
+        opacity: 0;
+        background-image: url('MemazingLogoSubtitleOutlineFlyHumanCapsWhite.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 200px;
+        display: block;
     }
 }

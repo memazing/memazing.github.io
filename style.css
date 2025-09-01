@@ -30,6 +30,9 @@ header {
     height: auto;
     display: block;
     color: #333;
+    /* Ensure SVG renders properly across browsers */
+    max-height: 300px;
+    object-fit: contain;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -81,10 +84,13 @@ nav {
     
     .logo {
         max-width: min(500px, 90vw);
+        width: min(500px, 90vw);
         max-height: 35vh;
-        width: auto;
         height: auto;
         margin-bottom: 1rem;
+        /* Force explicit sizing for mobile browsers */
+        min-width: 250px;
+        min-height: 75px;
     }
     
     header {
@@ -111,7 +117,10 @@ nav {
 @media (max-width: 480px) {
     .logo {
         max-width: min(400px, 95vw);
+        width: min(400px, 95vw);
         max-height: 30vh;
+        min-width: 200px;
+        min-height: 60px;
     }
     
     .container {

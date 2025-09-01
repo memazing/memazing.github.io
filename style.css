@@ -45,14 +45,10 @@ nav {
     background-color: #f0f0f0;
 }
 
-/* Default (light mode) */
-.logo {
-  content: url("MemazingLogoSubtitleOutlineFlyHumanCaps.png");
-}
-
-/* Dark mode override */
+/* Dark mode - invert SVG colors */
 @media (prefers-color-scheme: dark) {
   .logo {
-    content: url("MemazingLogoSubtitleOutlineFlyHumanCapsWhite.png");
+    filter: invert(1);
+    -webkit-filter: invert(1);
   }
 }

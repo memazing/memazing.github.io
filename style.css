@@ -32,15 +32,25 @@ header {
     /* Ensure SVG renders properly across browsers */
     max-height: 300px;
     object-fit: contain;
-    /* Force SVG visibility */
+    /* Force SVG visibility - target all elements */
     fill: #333;
     stroke: #333;
+}
+
+.logo * {
+    fill: #333 !important;
+    stroke: #333 !important;
 }
 
 @media (prefers-color-scheme: dark) {
     .logo {
         fill: #fff;
         stroke: #fff;
+    }
+    
+    .logo * {
+        fill: #fff !important;
+        stroke: #fff !important;
     }
 }
 

@@ -29,22 +29,14 @@ header {
     width: min(700px, 80vw);
     height: auto;
     display: block;
-    /* Ensure SVG renders properly across browsers */
     max-height: 300px;
     object-fit: contain;
-    /* Force SVG visibility - target all elements */
-    fill: #333;
-    stroke: #333;
 }
 
-.logo * {
-    fill: #333 !important;
-    stroke: #333 !important;
-}
-
+/* Mobile dark mode - invert logo colors */
 @media (prefers-color-scheme: dark) and (max-width: 768px) {
     .logo {
-        content: url('MemazingLogoSubtitleOutlineFlyHumanCapsWhite.png');
+        filter: invert(1) brightness(0.9);
     }
 }
 

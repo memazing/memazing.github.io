@@ -7,39 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script>
-        // Swap logo for mobile dark mode
-        function updateLogo() {
-            const logo = document.querySelector('.logo');
-            if (!logo) {
-                console.log('Logo element not found');
-                return;
-            }
-            
-            const isMobile = window.innerWidth <= 768;
-            const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-            
-            console.log('Mobile:', isMobile, 'Dark mode:', isDarkMode);
-            
-            if (isMobile && isDarkMode) {
-                console.log('Setting white logo');
-                logo.src = 'MemazingLogoSubtitleOutlineFlyHumanCapsWhite.png';
-            } else {
-                console.log('Setting regular logo');
-                logo.src = 'MemazingLogoSubtitleOutlineFlyHumanCaps.png';
-            }
-        }
-        
-        // Run immediately and on load
-        setTimeout(updateLogo, 100);
-        window.addEventListener('DOMContentLoaded', updateLogo);
-        // Run on resize
-        window.addEventListener('resize', updateLogo);
-        // Listen for theme changes
-        if (window.matchMedia) {
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateLogo);
-        }
-    </script>
     <div class="container">
         <header>
             <img src="MemazingLogoSubtitleOutlineFlyHumanCaps.png" alt="Memazing Logo" class="logo">

@@ -26,14 +26,15 @@ header {
 
 .logo {
     max-width: min(700px, 80vw);
+    width: min(700px, 80vw);
     height: auto;
     display: block;
-    width: 100%;
+    color: #333;
 }
 
 @media (prefers-color-scheme: dark) {
     .logo {
-        filter: invert(1) brightness(0.8);
+        color: #fff;
     }
 }
 

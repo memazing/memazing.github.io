@@ -29,15 +29,18 @@ header {
     width: min(700px, 80vw);
     height: auto;
     display: block;
-    color: #333;
     /* Ensure SVG renders properly across browsers */
     max-height: 300px;
     object-fit: contain;
+    /* Force SVG visibility */
+    fill: #333;
+    stroke: #333;
 }
 
 @media (prefers-color-scheme: dark) {
     .logo {
-        color: #fff;
+        fill: #fff;
+        stroke: #fff;
     }
 }
 

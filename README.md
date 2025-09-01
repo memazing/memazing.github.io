@@ -1,14 +1,14 @@
 # Memazing Website
 
-Simple placeholder website for Memazing - Brain Emulation Technologies.
+Simple placeholder website for Memazing, Inc.
 
 ## Logo Notes
 
 The logo (`images/MemazingLogoSubtitleOutlineFlyHumanCaps.svg`) was:
 1. Created in Adobe Illustrator
 2. Exported to SVG format
-3. Text converted to outlines to fix letter spacing issues in Samsung mobile browser
-4. Saved with 3 decimal places precision for optimal file size
+3. Text converted to outlines for consistent rendering across browsers (in particular to fix spacing of letters in Samsung mobile browser).
+4. Saved SVG with 3 decimal places precision for optimal file size
 
 ## Design Requirements
 

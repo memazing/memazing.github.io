@@ -45,9 +45,13 @@ nav {
     background-color: #f0f0f0;
 }
 
-/* Dark mode support */
+/* Dark mode support - Samsung Browser compatible */
 @media (prefers-color-scheme: dark) {
     .logo {
+        -webkit-filter: invert(1) brightness(0.9);
         filter: invert(1) brightness(0.9);
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 10px;
+        border-radius: 10px;
     }
 }

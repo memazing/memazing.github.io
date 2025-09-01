@@ -42,15 +42,9 @@ header {
     stroke: #333 !important;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) and (max-width: 768px) {
     .logo {
-        fill: #fff;
-        stroke: #fff;
-    }
-    
-    .logo * {
-        fill: #fff !important;
-        stroke: #fff !important;
+        content: url('MemazingLogoSubtitleOutlineFlyHumanCapsWhite.png');
     }
 }
 

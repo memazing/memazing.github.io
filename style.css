@@ -44,3 +44,10 @@ nav {
 .nav-link:hover {
     background-color: #f0f0f0;
 }
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .logo {
+        filter: invert(1) brightness(0.9);
+    }
+}

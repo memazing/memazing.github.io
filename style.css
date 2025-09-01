@@ -22,8 +22,20 @@ header {
 }
 
 .logo {
-    max-width: 80%;
+    width: 100%;
+    max-width: 800px;
     height: auto;
+    transform: scale(2.0);
+    margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 80%;
+        width: auto;
+        transform: none;
+        margin-bottom: 0;
+    }
 }
 
 nav {

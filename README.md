@@ -1,21 +1,40 @@
 # Memazing Website
 
-Simple placeholder website for Memazing, Inc.
+Corporate website for Memazing, Inc. Hosted on GitHub Pages at [memazing.com](https://memazing.com).
 
-## Logo Notes
+## Contents
 
-The logo (`images/MemazingLogoSubtitleOutlineFlyHumanCaps.svg`) was:
-1. Created in Adobe Illustrator
-2. Exported to SVG format
-3. Text converted to outlines for consistent rendering across browsers (in particular to fix spacing of letters in Samsung mobile browser).
-4. Saved SVG with 3 decimal places precision for optimal file size
+- Mission statement
+- Staff and advisors (with links to Nobel Prize, Turing Award, etc.)
+- Media section with YouTube videos and press coverage (NYT, Guardian, Economist, Nature)
+- Contact link
 
-## Design Requirements
+## Logo
 
-The site is designed to display properly on mobile devices in both light and dark modes. The logo uses CSS filters to invert colors in dark mode for proper visibility.
+The logo (`images/MemazingLogoSubtitleOutlineFlyHumanCaps.svg`) uses:
+- SVG format with text converted to outlines for consistent rendering across browsers (fixes letter spacing issues in Samsung mobile browser)
+- 3 decimal places precision for optimal file size
+- CSS `filter: invert(1)` to display white-on-black in the header
+- `transform: scale()` to appear larger than its layout box
+
+PNG versions also exist for fallback purposes.
+
+## Responsive Design
+
+The site handles multiple device configurations:
+
+| Condition | Logo Scale | Notes |
+|-----------|------------|-------|
+| Desktop (>1100px) | 1.4 | Full-size logo |
+| Tablet/narrow desktop (<=1100px) | 1.1 | Prevents overflow at intermediate widths |
+| Mobile landscape (height <=500px) | 1.1 | Regular phones rotated |
+| Foldables landscape (height <=1000px, touch) | 1.1 | Galaxy Fold and similar devices |
+
+The header uses `overflow: hidden` to clip the scaled logo and prevent horizontal scrollbar issues.
 
 ## Technologies
 
 - HTML5
-- CSS3 (with responsive design and dark mode support)
+- CSS3 with responsive media queries
 - SVG graphics
+- GoatCounter analytics

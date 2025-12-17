@@ -194,11 +194,11 @@ h3 {
     }
 }
 
-/* Mobile landscape - reduce logo size */
-@media (max-width: 1024px) and (orientation: landscape) {
+/* Mobile landscape - target by limited height, not width */
+@media (max-height: 500px) and (orientation: landscape) {
     .logo {
-        max-width: 50%;
-        transform: scale(1.0);
+        max-width: 70%;
+        transform: scale(1.1);
     }
 }
 

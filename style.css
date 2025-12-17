@@ -194,6 +194,14 @@ h3 {
     }
 }
 
+/* Mobile landscape - reduce logo size */
+@media (max-width: 1024px) and (orientation: landscape) {
+    .logo {
+        max-width: 50%;
+        transform: scale(1.0);
+    }
+}
+
 nav {
     display: flex;
     gap: 20px;

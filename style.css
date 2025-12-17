@@ -172,7 +172,7 @@ h3 {
 
     .media-text {
         padding: 30px 15px;
-        min-height: 120px;
+        height: 120px;
     }
 
     .media-text span {
@@ -181,11 +181,15 @@ h3 {
 
     .media-logo {
         padding: 30px 15px;
-        min-height: 120px;
+        height: 120px;
     }
 
     .media-logo img {
         max-height: 100px;
+    }
+
+    .media-video {
+        height: 120px;
     }
 }
 
@@ -259,7 +263,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 150px;
+    height: 150px;
     border-radius: 5px;
 }
 
@@ -277,7 +281,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 150px;
+    height: 150px;
     border-radius: 5px;
 }
 
@@ -289,10 +293,17 @@ nav {
     object-fit: contain;
 }
 
+.media-video {
+    height: 150px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
 .media-video img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
+    object-fit: cover;
     border-radius: 5px;
 }
 

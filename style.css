@@ -202,8 +202,8 @@ h3 {
     }
 }
 
-/* Larger foldables/tablets in landscape */
-@media (max-height: 1000px) and (max-width: 2200px) and (orientation: landscape) {
+/* Larger foldables/tablets in landscape (touch devices only) */
+@media (max-height: 1000px) and (orientation: landscape) and (hover: none) {
     .logo {
         max-width: 60%;
         transform: scale(1.1);

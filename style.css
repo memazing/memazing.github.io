@@ -102,9 +102,9 @@ h3 {
 
 @media (max-width: 768px) {
     .logo {
-        max-width: 80%;
+        max-width: 85%;
         width: auto;
-        transform: none;
+        transform: scale(1.1);
         filter: invert(1);
         -webkit-filter: invert(1);
     }
@@ -136,7 +136,7 @@ h3 {
     }
 
     .nav-link {
-        font-size: 1.5em;
+        font-size: 1.5em !important;
     }
 
     .footer-quote {
@@ -145,7 +145,7 @@ h3 {
     }
 
     .footer-quote p {
-        font-size: 1.5em;
+        font-size: 1.5em !important;
     }
 }
 

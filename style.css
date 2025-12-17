@@ -202,6 +202,14 @@ h3 {
     }
 }
 
+/* Larger foldables/tablets in landscape */
+@media (max-height: 1000px) and (max-width: 1400px) and (orientation: landscape) {
+    .logo {
+        max-width: 60%;
+        transform: scale(1.1);
+    }
+}
+
 nav {
     display: flex;
     gap: 20px;

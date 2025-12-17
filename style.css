@@ -156,6 +156,9 @@ h3 {
     .media-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items: center;
     }
 
     .media-text {
@@ -217,6 +220,8 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .media-item {

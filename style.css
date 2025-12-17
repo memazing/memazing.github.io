@@ -105,7 +105,7 @@ h3 {
     width: 100%;
     max-width: 800px;
     height: auto;
-    transform: scale(1.2);
+    transform: scale(1.4);
     filter: invert(1);
     -webkit-filter: invert(1);
 }
@@ -114,7 +114,7 @@ h3 {
     .logo {
         max-width: 85%;
         width: auto;
-        transform: scale(1.0);
+        transform: scale(1.1);
         filter: invert(1);
         -webkit-filter: invert(1);
     }
@@ -124,18 +124,6 @@ h3 {
         margin-left: -20px;
         margin-right: -20px;
     }
-}
-
-@media (max-width: 1024px) and (orientation: landscape) {
-    .logo {
-        max-width: 75%;
-        transform: scale(1.0);
-    }
-
-    header {
-        padding: 50px 15px;
-    }
-}
 
 nav {
     display: flex;

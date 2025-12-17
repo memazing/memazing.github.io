@@ -24,6 +24,7 @@ header {
     margin-left: -20px;
     margin-right: -20px;
     margin-top: -20px;
+    overflow: hidden;
 }
 
 main {
@@ -104,7 +105,7 @@ h3 {
     width: 100%;
     max-width: 800px;
     height: auto;
-    transform: scale(1.4);
+    transform: scale(1.2);
     filter: invert(1);
     -webkit-filter: invert(1);
 }
@@ -113,7 +114,7 @@ h3 {
     .logo {
         max-width: 85%;
         width: auto;
-        transform: scale(1.1);
+        transform: scale(1.0);
         filter: invert(1);
         -webkit-filter: invert(1);
     }
@@ -122,6 +123,17 @@ h3 {
         padding: 50px 15px;
         margin-left: -20px;
         margin-right: -20px;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    .logo {
+        max-width: 70%;
+        transform: scale(1.0);
+    }
+
+    header {
+        padding: 40px 15px;
     }
 
     .mission-line {

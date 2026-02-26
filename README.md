@@ -5,8 +5,6 @@ Corporate website for Memazing, Inc. Hosted on GitHub Pages at [memazing.com](ht
 ## Contents
 
 - Mission statement
-- Staff and advisors (with links to Nobel Prize, Turing Award, etc.)
-- Media section with YouTube videos and press coverage (NYT, Guardian, Economist, Nature)
 - Contact link
 
 ## Logo

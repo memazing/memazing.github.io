@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <title>Privacy Policy — Memazing</title>
+    <link rel="stylesheet" href="/style.css?v=5">
+    <style>
+        .legal-header {
+            background-color: #000000;
+            padding: 40px 20px 20px;
+            text-align: center;
+        }
+        .legal-header a { display: inline-block; }
+        .legal-header img {
+            width: auto;
+            max-width: 320px;
+            filter: invert(1);
+            -webkit-filter: invert(1);
+        }
+        .legal {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 20px 20px 60px;
+            text-align: left;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        .legal h1 { font-size: 1.8em; margin-bottom: 8px; font-weight: 600; }
+        .legal .meta { color: #999; font-size: 0.95em; margin-bottom: 32px; }
+        .legal .meta div { margin-bottom: 4px; }
+        .legal h2 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .legal p { margin-bottom: 14px; }
+        .legal ul { margin: 0 0 14px 24px; }
+        .legal li { margin-bottom: 6px; }
+        .legal a { color: #8ab4f8; }
+        .legal-footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .legal-footer a { color: #999; text-decoration: none; }
+        .legal-footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="legal-header">
+        <a href="/"><img src="/images/MemazingLogoNoSubtitle.svg" alt="Memazing"></a>
+    </div>
+
+    <article class="legal">
+        <h1>Privacy Policy</h1>
+        <div class="meta">
+            <div><strong>Effective date:</strong> 2026-08-20</div>
+            <div><strong>Application:</strong> Claude MCP (local) (the &ldquo;Software&rdquo;)</div>
+            <div><strong>Operator:</strong> Memazing, Inc. (the &ldquo;Company&rdquo;)</div>
+        </div>
+
+        <h2>1. Scope</h2>
+        <p>The Software is an internal tool operated by the Company on Company-controlled hardware. It has no external end users. The only person whose data is accessed through the Software is the Company itself, via the Company&rsquo;s own QuickBooks Online account.</p>
+        <p>This policy describes what happens to that data when the Software runs.</p>
+
+        <h2>2. Data Accessed</h2>
+        <p>Through the Intuit OAuth 2.0 flow, the Software is authorized to read the Company&rsquo;s QuickBooks Online company file, including accounting records such as accounts, transactions, customers, vendors, and reports. Access is read-only in the Company&rsquo;s configuration.</p>
+
+        <h2>3. Where the Data Goes</h2>
+        <ul>
+            <li><strong>Local processing.</strong> QuickBooks data is fetched from Intuit&rsquo;s API to the Company-controlled machine on which the Software runs and is held in memory only for the duration of a request.</li>
+            <li><strong>AI provider.</strong> When the Company&rsquo;s operator invokes the Software from an AI coding assistant (currently Anthropic&rsquo;s Claude Code), the specific QuickBooks fields returned by a given tool call are transmitted to Anthropic as part of the assistant&rsquo;s context. Anthropic&rsquo;s handling of that data is governed by Anthropic&rsquo;s own terms and privacy commitments.</li>
+            <li><strong>No other third parties.</strong> The Software does not transmit QuickBooks data to any other service, does not log it to any remote destination, and does not persist it beyond the operator&rsquo;s local machine.</li>
+        </ul>
+
+        <h2>4. What Is Stored</h2>
+        <p>The Software persists only the OAuth credentials required to reach the Intuit API (client identifiers and refresh token), in a local configuration file on the operator&rsquo;s machine. QuickBooks record data itself is not stored by the Software.</p>
+
+        <h2>5. Security</h2>
+        <p>Credentials are stored on the operator&rsquo;s machine under standard file permissions. The Software is not exposed on any network port and does not accept external connections.</p>
+
+        <h2>6. Retention</h2>
+        <p>OAuth credentials are retained until the operator revokes access (via the Intuit developer dashboard or by deleting the local configuration file). Because the Software does not persist QuickBooks record data, there is no additional retention to disclose.</p>
+
+        <h2>7. Changes to This Policy</h2>
+        <p>Material changes will be reflected here with an updated effective date. Because there are no external end users, no additional notice mechanism is provided.</p>
+
+        <h2>8. Contact</h2>
+        <p>Questions regarding this policy may be directed to <a href="mailto:contact@memazing.com">contact@memazing.com</a>.</p>
+    </article>
+
+    <div class="legal-footer">
+        <a href="/">memazing.com</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+# robots.txt for memazing.com
+#
+# The /legal/ pages exist to satisfy Intuit's application-registration
+# requirements. They are not intended for search indexing, discovery,
+# or inclusion in AI training data.
+#
+# Search engines (Googlebot, Bingbot, etc.) are also asked to skip
+# /legal/ here as belt-and-suspenders alongside the per-page
+# <meta name="robots" content="noindex,..."> tag on those pages.
+# The rest of the site remains open to all crawlers.
+
+# --- AI training / retrieval crawlers ---
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Claude-Web
+User-agent: Google-Extended
+User-agent: GoogleOther
+User-agent: Applebot-Extended
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
+User-agent: FacebookBot
+User-agent: Amazonbot
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: cohere-ai
+User-agent: Diffbot
+User-agent: DuckAssistBot
+User-agent: ImagesiftBot
+User-agent: MistralAI-User
+User-agent: PetalBot
+User-agent: Timpibot
+User-agent: YouBot
+User-agent: omgili
+User-agent: omgilibot
+User-agent: FriendlyCrawler
+Disallow: /legal/
+
+# --- Traditional search crawlers (redundant with meta noindex, harmless) ---
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: DuckDuckBot
+User-agent: Slurp
+User-agent: Baiduspider
+User-agent: YandexBot
+Disallow: /legal/

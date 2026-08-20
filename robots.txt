@@ -1,11 +1,11 @@
 # robots.txt for memazing.com
 #
-# The /legal/ pages exist to satisfy Intuit's application-registration
-# requirements. They are not intended for search indexing, discovery,
-# or inclusion in AI training data.
+# The /legal/ and /apps/ pages exist to satisfy Intuit's application-
+# registration requirements. They are not intended for search indexing,
+# discovery, or inclusion in AI training data.
 #
 # Search engines (Googlebot, Bingbot, etc.) are also asked to skip
-# /legal/ here as belt-and-suspenders alongside the per-page
+# these paths here as belt-and-suspenders alongside the per-page
 # <meta name="robots" content="noindex,..."> tag on those pages.
 # The rest of the site remains open to all crawlers.
 
@@ -39,6 +39,7 @@ User-agent: omgili
 User-agent: omgilibot
 User-agent: FriendlyCrawler
 Disallow: /legal/
+Disallow: /apps/
 
 # --- Traditional search crawlers (redundant with meta noindex, harmless) ---
 User-agent: Googlebot
@@ -48,3 +49,4 @@ User-agent: Slurp
 User-agent: Baiduspider
 User-agent: YandexBot
 Disallow: /legal/
+Disallow: /apps/

@@ -1,4 +1,19 @@
-# Logo assets — notes (2026-09-01)
+# Logo assets — notes
+
+## Update (2026-10-09)
+
+The site now uses the new "memazing" wordmark with the blue "e" (blue `#21AEE4`, black letters):
+
+- `memazing_logo.png` — the wordmark, transparent background, used in every page header and on the home page.
+- `memazing_icon.png` — the blue "e" on its own, used as the browser-tab icon.
+
+These are high-resolution PNGs made from the image supplied on 2026-10-09. If a vector (SVG) export
+of the new logo becomes available, swap it in for sharper scaling. The `memazing_logo_9.*` notes
+below describe the previous logo and are kept for history.
+
+---
+
+## Previous logo notes (2026-09-01)
 
 ## Files
 

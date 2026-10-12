@@ -48,38 +48,11 @@ a { color: var(--link); }
     flex-wrap: wrap;
 }
 
-.brand,
-.legal-header a.brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-}
-
-.brand { --mark: 32px; }
-.legal-header a.brand { --mark: 36px; }
-
 .brand img {
     display: block;
-    height: var(--mark);
+    height: 32px;
     width: auto;
 }
-
-.brand-name {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: var(--mark, 32px);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: calc(var(--mark, 32px) * 0.58);
-    line-height: 0.74;
-    text-align: left;
-    color: var(--ink);
-    white-space: nowrap;
-}
-
-.brand-name span { display: block; }
 
 .tabs {
     display: flex;
@@ -99,6 +72,11 @@ a { color: var(--link); }
 
 .tabs a:hover { background: var(--soft); }
 
+.tabs a[aria-current="page"] {
+    background: var(--brand);
+    color: #ffffff;
+}
+
 /* ---------- Page body ---------- */
 
 main {
@@ -115,7 +93,7 @@ h1, h2, .display {
     line-height: 1.25;
 }
 
-h1 { font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 2.4rem; margin-bottom: 20px; }
+h1 { font-size: 2.4rem; margin-bottom: 20px; }
 h2 { font-size: 1.4rem; margin: 36px 0 10px; }
 
 main p { font-size: 1.15rem; margin-bottom: 16px; }
@@ -159,6 +137,7 @@ main p { font-size: 1.15rem; margin-bottom: 16px; }
 
 .card {
     border: 1px solid var(--line);
+    border-left: 4px solid var(--brand);
     border-radius: 10px;
     padding: 22px 24px;
     margin: 24px 0;
@@ -174,7 +153,6 @@ main p { font-size: 1.15rem; margin-bottom: 16px; }
 }
 
 .card .value { font-size: 1.3rem; font-weight: 600; margin: 0; }
-.card .value a { color: var(--ink); }
 
 /* ---------- Footer ---------- */
 
@@ -202,7 +180,7 @@ main p { font-size: 1.15rem; margin-bottom: 16px; }
 
 @media (max-width: 600px) {
     .site-header .inner { justify-content: center; padding: 14px 16px; }
-    .brand { --mark: 28px; }
+    .brand img { height: 28px; }
     .tabs a { font-size: 1rem; padding: 7px 12px; }
     main { padding: 40px 16px 60px; }
     h1 { font-size: 1.9rem; }

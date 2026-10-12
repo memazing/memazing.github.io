@@ -190,3 +190,9 @@ main p { font-size: 1.15rem; margin-bottom: 16px; }
 
 /* Legal and app pages keep their own layout; just let them fill the width */
 .legal { width: 100%; }
+
+/* ---------- Contact page: Arial throughout ---------- */
+body.contact-page,
+body.contact-page h1 {
+    font-family: Arial, sans-serif;
+}

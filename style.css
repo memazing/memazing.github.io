@@ -196,3 +196,16 @@ body.contact-page,
 body.contact-page h1 {
     font-family: Arial, sans-serif;
 }
+
+/* Contact page: "Contact" tab looks like the home page's, plain email card */
+body.contact-page .tabs a[aria-current="page"] {
+    background: transparent;
+    color: var(--ink);
+}
+body.contact-page .tabs a[aria-current="page"]:hover { background: var(--soft); }
+body.contact-page .card { border-left: 1px solid var(--line); }
+body.contact-page .card .value a { color: #000000; }
+body.contact-page h1 { font-size: 2rem; }
+@media (max-width: 600px) {
+    body.contact-page h1 { font-size: 1.65rem; }
+}
